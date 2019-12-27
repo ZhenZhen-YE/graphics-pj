@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F600DFE323B471C500ACE020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F600DFE223B471C500ACE020 /* Assets.xcassets */; };
+		F600DFE623B471C500ACE020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F600DFE523B471C500ACE020 /* Preview Assets.xcassets */; };
+		F600DFE923B471C500ACE020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F600DFE723B471C500ACE020 /* Main.storyboard */; };
+		F600DFF523B471C600ACE020 /* glTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F600DFF423B471C600ACE020 /* glTests.swift */; };
+		F600E00023B471C600ACE020 /* glUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F600DFFF23B471C600ACE020 /* glUITests.swift */; };
+		F600E00F23B471E900ACE020 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F600E00E23B471E800ACE020 /* GLUT.framework */; };
+		F600E01123B4726100ACE020 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F600E01023B4726100ACE020 /* OpenGL.framework */; };
+		F600E02823B478D000ACE020 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F600E02723B478D000ACE020 /* main.cpp */; };
+		F600E03323B47B2300ACE020 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F600E03223B47B2300ACE020 /* libGLTools.a */; };
+		F600E03D23B49CF500ACE020 /* libglfw.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F600E03C23B4944700ACE020 /* libglfw.3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F600DFF123B471C600ACE020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F600DFD323B471C100ACE020 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F600DFDA23B471C100ACE020;
+			remoteInfo = gl;
+		};
+		F600DFFC23B471C600ACE020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F600DFD323B471C100ACE020 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F600DFDA23B471C100ACE020;
+			remoteInfo = gl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F600DFDB23B471C200ACE020 /* gl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F600DFE223B471C500ACE020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F600DFE523B471C500ACE020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F600DFE823B471C500ACE020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F600DFEA23B471C500ACE020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F600DFEB23B471C500ACE020 /* gl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gl.entitlements; sourceTree = "<group>"; };
+		F600DFF023B471C600ACE020 /* glTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F600DFF423B471C600ACE020 /* glTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glTests.swift; sourceTree = "<group>"; };
+		F600DFF623B471C600ACE020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F600DFFB23B471C600ACE020 /* glUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F600DFFF23B471C600ACE020 /* glUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glUITests.swift; sourceTree = "<group>"; };
+		F600E00123B471C600ACE020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F600E00E23B471E800ACE020 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		F600E01023B4726100ACE020 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F600E01523B472BD00ACE020 /* GLBatchBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		F600E01623B472BD00ACE020 /* math3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		F600E01723B472BD00ACE020 /* GLTriangleBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		F600E01823B472BD00ACE020 /* GLBatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		F600E01923B472BD00ACE020 /* GLMatrixStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		F600E01A23B472BD00ACE020 /* GLFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		F600E01B23B472BD00ACE020 /* GLFrustum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		F600E01C23B472BD00ACE020 /* GLGeometryTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		F600E01D23B472BD00ACE020 /* GLShaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		F600E01E23B472BD00ACE020 /* StopWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		F600E02023B472BD00ACE020 /* glxew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		F600E02123B472BD00ACE020 /* wglew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		F600E02223B472BD00ACE020 /* glew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		F600E02323B472BD00ACE020 /* GLTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		F600E02723B478D000ACE020 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F600E03223B47B2300ACE020 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = ../../../../Downloads/openGL/libGLTools.a; sourceTree = "<group>"; };
+		F600E03423B493DD00ACE020 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F600E03623B493E500ACE020 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F600E03823B493F200ACE020 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F600E03C23B4944700ACE020 /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F600DFD823B471C100ACE020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F600E03D23B49CF500ACE020 /* libglfw.3.dylib in Frameworks */,
+				F600E03323B47B2300ACE020 /* libGLTools.a in Frameworks */,
+				F600E01123B4726100ACE020 /* OpenGL.framework in Frameworks */,
+				F600E00F23B471E900ACE020 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F600DFED23B471C600ACE020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F600DFF823B471C600ACE020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F600DFD223B471C100ACE020 = {
+			isa = PBXGroup;
+			children = (
+				F600DFDD23B471C200ACE020 /* gl */,
+				F600DFF323B471C600ACE020 /* glTests */,
+				F600DFFE23B471C600ACE020 /* glUITests */,
+				F600DFDC23B471C200ACE020 /* Products */,
+				F600E00D23B471E800ACE020 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F600DFDC23B471C200ACE020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F600DFDB23B471C200ACE020 /* gl.app */,
+				F600DFF023B471C600ACE020 /* glTests.xctest */,
+				F600DFFB23B471C600ACE020 /* glUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F600DFDD23B471C200ACE020 /* gl */ = {
+			isa = PBXGroup;
+			children = (
+				F600E02723B478D000ACE020 /* main.cpp */,
+				F600E01423B472BD00ACE020 /* include */,
+				F600DFE223B471C500ACE020 /* Assets.xcassets */,
+				F600DFE723B471C500ACE020 /* Main.storyboard */,
+				F600DFEA23B471C500ACE020 /* Info.plist */,
+				F600DFEB23B471C500ACE020 /* gl.entitlements */,
+				F600DFE423B471C500ACE020 /* Preview Content */,
+			);
+			path = gl;
+			sourceTree = "<group>";
+		};
+		F600DFE423B471C500ACE020 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F600DFE523B471C500ACE020 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F600DFF323B471C600ACE020 /* glTests */ = {
+			isa = PBXGroup;
+			children = (
+				F600DFF423B471C600ACE020 /* glTests.swift */,
+				F600DFF623B471C600ACE020 /* Info.plist */,
+			);
+			path = glTests;
+			sourceTree = "<group>";
+		};
+		F600DFFE23B471C600ACE020 /* glUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F600DFFF23B471C600ACE020 /* glUITests.swift */,
+				F600E00123B471C600ACE020 /* Info.plist */,
+			);
+			path = glUITests;
+			sourceTree = "<group>";
+		};
+		F600E00D23B471E800ACE020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F600E03C23B4944700ACE020 /* libglfw.3.dylib */,
+				F600E03823B493F200ACE020 /* CoreVideo.framework */,
+				F600E03623B493E500ACE020 /* IOKit.framework */,
+				F600E03423B493DD00ACE020 /* Cocoa.framework */,
+				F600E03223B47B2300ACE020 /* libGLTools.a */,
+				F600E01023B4726100ACE020 /* OpenGL.framework */,
+				F600E00E23B471E800ACE020 /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F600E01423B472BD00ACE020 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F600E01523B472BD00ACE020 /* GLBatchBase.h */,
+				F600E01623B472BD00ACE020 /* math3d.h */,
+				F600E01723B472BD00ACE020 /* GLTriangleBatch.h */,
+				F600E01823B472BD00ACE020 /* GLBatch.h */,
+				F600E01923B472BD00ACE020 /* GLMatrixStack.h */,
+				F600E01A23B472BD00ACE020 /* GLFrame.h */,
+				F600E01B23B472BD00ACE020 /* GLFrustum.h */,
+				F600E01C23B472BD00ACE020 /* GLGeometryTransform.h */,
+				F600E01D23B472BD00ACE020 /* GLShaderManager.h */,
+				F600E01E23B472BD00ACE020 /* StopWatch.h */,
+				F600E01F23B472BD00ACE020 /* GL */,
+				F600E02323B472BD00ACE020 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F600E01F23B472BD00ACE020 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				F600E02023B472BD00ACE020 /* glxew.h */,
+				F600E02123B472BD00ACE020 /* wglew.h */,
+				F600E02223B472BD00ACE020 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F600DFDA23B471C100ACE020 /* gl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F600E00423B471C600ACE020 /* Build configuration list for PBXNativeTarget "gl" */;
+			buildPhases = (
+				F600DFD723B471C100ACE020 /* Sources */,
+				F600DFD823B471C100ACE020 /* Frameworks */,
+				F600DFD923B471C100ACE020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gl;
+			productName = gl;
+			productReference = F600DFDB23B471C200ACE020 /* gl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F600DFEF23B471C600ACE020 /* glTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F600E00723B471C600ACE020 /* Build configuration list for PBXNativeTarget "glTests" */;
+			buildPhases = (
+				F600DFEC23B471C600ACE020 /* Sources */,
+				F600DFED23B471C600ACE020 /* Frameworks */,
+				F600DFEE23B471C600ACE020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F600DFF223B471C600ACE020 /* PBXTargetDependency */,
+			);
+			name = glTests;
+			productName = glTests;
+			productReference = F600DFF023B471C600ACE020 /* glTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F600DFFA23B471C600ACE020 /* glUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F600E00A23B471C600ACE020 /* Build configuration list for PBXNativeTarget "glUITests" */;
+			buildPhases = (
+				F600DFF723B471C600ACE020 /* Sources */,
+				F600DFF823B471C600ACE020 /* Frameworks */,
+				F600DFF923B471C600ACE020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F600DFFD23B471C600ACE020 /* PBXTargetDependency */,
+			);
+			name = glUITests;
+			productName = glUITests;
+			productReference = F600DFFB23B471C600ACE020 /* glUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F600DFD323B471C100ACE020 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "叶蓁蓁";
+				TargetAttributes = {
+					F600DFDA23B471C100ACE020 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					F600DFEF23B471C600ACE020 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F600DFDA23B471C100ACE020;
+					};
+					F600DFFA23B471C600ACE020 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F600DFDA23B471C100ACE020;
+					};
+				};
+			};
+			buildConfigurationList = F600DFD623B471C100ACE020 /* Build configuration list for PBXProject "gl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F600DFD223B471C100ACE020;
+			productRefGroup = F600DFDC23B471C200ACE020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F600DFDA23B471C100ACE020 /* gl */,
+				F600DFEF23B471C600ACE020 /* glTests */,
+				F600DFFA23B471C600ACE020 /* glUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F600DFD923B471C100ACE020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F600DFE923B471C500ACE020 /* Main.storyboard in Resources */,
+				F600DFE623B471C500ACE020 /* Preview Assets.xcassets in Resources */,
+				F600DFE323B471C500ACE020 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F600DFEE23B471C600ACE020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F600DFF923B471C600ACE020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F600DFD723B471C100ACE020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F600E02823B478D000ACE020 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F600DFEC23B471C600ACE020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F600DFF523B471C600ACE020 /* glTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F600DFF723B471C600ACE020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F600E00023B471C600ACE020 /* glUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F600DFF223B471C600ACE020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F600DFDA23B471C100ACE020 /* gl */;
+			targetProxy = F600DFF123B471C600ACE020 /* PBXContainerItemProxy */;
+		};
+		F600DFFD23B471C600ACE020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F600DFDA23B471C100ACE020 /* gl */;
+			targetProxy = F600DFFC23B471C600ACE020 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F600DFE723B471C500ACE020 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F600DFE823B471C500ACE020 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F600E00223B471C600ACE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F600E00323B471C600ACE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F600E00523B471C600ACE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = gl/gl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"gl/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/gl/include\"",
+					"$(glfw_header)",
+				);
+				INFOPLIST_FILE = gl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"$(glfw_lib)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = yezz.gl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F600E00623B471C600ACE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = gl/gl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"gl/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/gl/include\"",
+					"$(glfw_header)",
+				);
+				INFOPLIST_FILE = gl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/\"",
+					"$(glfw_lib)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = yezz.gl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F600E00823B471C600ACE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = yezz.glTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gl.app/Contents/MacOS/gl";
+			};
+			name = Debug;
+		};
+		F600E00923B471C600ACE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = yezz.glTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gl.app/Contents/MacOS/gl";
+			};
+			name = Release;
+		};
+		F600E00B23B471C600ACE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yezz.glUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = gl;
+			};
+			name = Debug;
+		};
+		F600E00C23B471C600ACE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yezz.glUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = gl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F600DFD623B471C100ACE020 /* Build configuration list for PBXProject "gl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F600E00223B471C600ACE020 /* Debug */,
+				F600E00323B471C600ACE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F600E00423B471C600ACE020 /* Build configuration list for PBXNativeTarget "gl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F600E00523B471C600ACE020 /* Debug */,
+				F600E00623B471C600ACE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F600E00723B471C600ACE020 /* Build configuration list for PBXNativeTarget "glTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F600E00823B471C600ACE020 /* Debug */,
+				F600E00923B471C600ACE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F600E00A23B471C600ACE020 /* Build configuration list for PBXNativeTarget "glUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F600E00B23B471C600ACE020 /* Debug */,
+				F600E00C23B471C600ACE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F600DFD323B471C100ACE020 /* Project object */;
+}
